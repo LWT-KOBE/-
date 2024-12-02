@@ -18,13 +18,10 @@ int main(void)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); 	//设置NVIC中断分组2:2位抢占优先级，2位响应优先级	
 	delay_init();	    			//延时函数初始化
 	KEY_Init();						// IO口配置
-
-	g_sum_timer2 = 0;
-	TM1620_Config();
-	TM1620_init();
 	uart_init(115200);				//初始化串口1
 	uart2_init(115200);				//初始化串口2
 	time2_init(99, 719); //1MS  
+<<<<<<< HEAD
 	//DMA_USART2_Configuration();
 	//AD_Init();
 	Adc_Init();
@@ -54,30 +51,24 @@ int main(void)
 		RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR , ENABLE);
 		/*清除WU状态位*/
 		PWR_ClearFlag (PWR_FLAG_WU);
+=======
+	DMA_USART2_Configuration();
+	
+	while(1)  
+	{		
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 		
-		/* 使能WKUP引脚的唤醒功能 ，使能PA0*/
-		PWR_WakeUpPinCmd (ENABLE);
-		/* 进入待机模式 */
-		PWR_EnterSTANDBYMode();
-		RC.control_idle_time = 120005;
-	}
 	
-	
-////	/* 如果120秒后没有按键按下则进入待机模式 */
-//	if(time >= 120000){
-//		RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR , ENABLE);
-//		/*清除WU状态位*/
-//		PWR_ClearFlag (PWR_FLAG_WU);
-//		
-//		/* 使能WKUP引脚的唤醒功能 ，使能PA0*/
-//		PWR_WakeUpPinCmd (ENABLE);
-//		/* 进入待机模式 */
-//		PWR_EnterSTANDBYMode();
-//		time = 120005;
-//	}
+	//PBout(14) = 0;
 
-	
-	
+//		if(RC.num >= 20000){
+////			//__set_FAULTMASK(1); //关闭所有中断 
+////			NVIC_SystemReset();
+//			//printf("\r\n");
+//			usart2_send_data("AT+RST\r\n");
+//			
+//			RC.num = 0;
+//		}
 	}		
 }
 

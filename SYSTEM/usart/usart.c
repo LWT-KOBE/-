@@ -4,6 +4,7 @@
 #include "stm32f10x_it.h" 
 #include "app.h"
 #include "exti.h"
+#include "task.h"
 ////////////////////////////////////////////////////////////////////////////////// 	 
 //如果使用ucos,则包括下面的头文件即可.
 #if SYSTEM_SUPPORT_OS
@@ -475,6 +476,29 @@ void DMA1_Channel7_IRQHandler(void)
 }
 
 
+<<<<<<< HEAD
+=======
+//串口2接收处理函数
+void Serial2Data(uint8_t ucData){
+	static unsigned char ucRxBuffer[250];
+	static unsigned char ucRxCnt = 0;	
+	ucRxBuffer[ucRxCnt++]=ucData;	//将收到的数据存入缓冲区中
+	if (ucRxBuffer[0]!=0xaa && ucRxBuffer[1] != 0x55) //数据头不对，则重新开始寻找0xaa 0x55数据头
+	{
+		ucRxCnt=0;
+		PBout(14) = 1;
+		return;
+	}
+	if (ucRxCnt<5) {return;}//数据不满5个，则返回
+	else
+	{
+		PBout(14) = 0;
+		ucRxCnt=0;//清空缓存区
+	}
+	
+}
+
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 
 void USART2_IRQHandler(void)
 {
@@ -506,6 +530,7 @@ void USART2_IRQHandler(void)
 	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET) //Check if data is received //判断是否接收到数据
 	{
 		Res = USART_ReceiveData(USART2);	//读取接收到的数据
+		Serial2Data(Res);
 		USART_SendData(USART1,Res);
 		//USART_SendData(USART2,Res);
 		if((USART_RX_STA&0x8000)==0)//接收未完成

@@ -1,5 +1,9 @@
 Dependencies for Project 'Template', Target 'Target 1': (DO NOT MODIFY !)
+<<<<<<< HEAD
 F (.\main.c)(0x6732FE52)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+=======
+F (.\main.c)(0x674D2E02)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\SYSTEM\include\include.h)(0x671211FF)
 I (..\USER\stm32f10x.h)(0x61E67280)
 I (..\CORE\core_cm3.h)(0x61E6727E)
@@ -29,13 +33,21 @@ I (..\HARDWARE\timer\timer.h)(0x670A53A8)
 I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
 I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
 I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
 I (..\HARDWARE\APP\app.h)(0x6710DFA9)
@@ -72,13 +84,21 @@ I (..\HARDWARE\timer\timer.h)(0x670A53A8)
 I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
 I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
 I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 F (.\system_stm32f10x.c)(0x61E67280)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\system_stm32f10x.o --omf_browse ..\obj\system_stm32f10x.crf --depend ..\obj\system_stm32f10x.d)
 I (stm32f10x.h)(0x61E67280)
@@ -100,7 +120,11 @@ I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
+<<<<<<< HEAD
 F (..\HARDWARE\KEY\key.c)(0x6718B8A5)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
+=======
+F (..\HARDWARE\KEY\key.c)(0x6732F620)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\USER\stm32f10x.h)(0x61E67280)
 I (..\CORE\core_cm3.h)(0x61E6727E)
 I (D:\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
@@ -119,7 +143,11 @@ I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\SYSTEM\sys\sys.h)(0x61E67280)
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\SYSTEM\include\include.h)(0x671211FF)
@@ -137,6 +165,10 @@ I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 F (..\HARDWARE\CAN\can.c)(0x66AB1450)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\can.o --omf_browse ..\obj\can.crf --depend ..\obj\can.d)
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
@@ -162,7 +194,14 @@ I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
 I (..\SYSTEM\delay\delay.h)(0x6565A030)
 I (..\SYSTEM\usart\usart.h)(0x6732C152)
 I (D:\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\APP\task.h)(0x6732C0C8)
+=======
+I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
+I (..\HARDWARE\APP\app.h)(0x6710DFA9)
+I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\SYSTEM\include\include.h)(0x671211FF)
 I (D:\ARM\ARMCC\include\string.h)(0x5EC77604)
 I (..\HARDWARE\timer\timer.h)(0x670A53A8)
@@ -175,9 +214,14 @@ I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 I (..\HARDWARE\APP\app.h)(0x6710DFA9)
 I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+I (..\HARDWARE\APP\AD.h)(0x6712162E)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 F (..\HARDWARE\timer\timer.c)(0x6718BBAD)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
 I (..\HARDWARE\timer\timer.h)(0x670A53A8)
 I (..\SYSTEM\include\include.h)(0x671211FF)
@@ -208,13 +252,21 @@ I (..\HARDWARE\APP\task.h)(0x6732C0C8)
 I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
 I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
 I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
 I (..\HARDWARE\APP\app.h)(0x6710DFA9)
@@ -241,7 +293,11 @@ I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\SYSTEM\sys\sys.h)(0x61E67280)
 I (..\HARDWARE\APP\app.h)(0x6710DFA9)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\SYSTEM\include\include.h)(0x671211FF)
 I (D:\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (D:\ARM\ARMCC\include\string.h)(0x5EC77604)
@@ -256,6 +312,10 @@ I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 F (..\HARDWARE\CAN\SEGGER_RTT.c)(0x5A74A218)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\segger_rtt.o --omf_browse ..\obj\segger_rtt.crf --depend ..\obj\segger_rtt.d)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
@@ -297,12 +357,20 @@ I (..\HARDWARE\timer\timer.h)(0x670A53A8)
 I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
 I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
 I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 F (..\HARDWARE\motor\motor.c)(0x66BD6A12)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\motor.o --omf_browse ..\obj\motor.crf --depend ..\obj\motor.d)
 I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
@@ -335,13 +403,21 @@ I (..\HARDWARE\APP\task.h)(0x6732C0C8)
 I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
 I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
 I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 I (..\HARDWARE\APP\app.h)(0x6710DFA9)
 F (..\HARDWARE\OLED\oled.c)(0x67122EAA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\oled.o --omf_browse ..\obj\oled.crf --depend ..\obj\oled.d)
@@ -389,7 +465,11 @@ I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\SYSTEM\include\include.h)(0x671211FF)
 I (D:\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
@@ -405,6 +485,10 @@ I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
 I (..\HARDWARE\APP\app.h)(0x6710DFA9)
@@ -430,7 +514,11 @@ I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\SYSTEM\sys\sys.h)(0x61E67280)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\SYSTEM\include\include.h)(0x671211FF)
 I (D:\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (D:\ARM\ARMCC\include\string.h)(0x5EC77604)
@@ -446,9 +534,16 @@ I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
 F (..\HARDWARE\APP\task.c)(0x6732FE53)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\task.o --omf_browse ..\obj\task.crf --depend ..\obj\task.d)
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+I (..\HARDWARE\APP\AD.h)(0x6712162E)
+I (..\HARDWARE\motor\motor.h)(0x66AAF9E9)
+F (..\HARDWARE\APP\task.c)(0x674D50CA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\task.o --omf_browse ..\obj\task.crf --depend ..\obj\task.d)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\USER\stm32f10x.h)(0x61E67280)
 I (..\CORE\core_cm3.h)(0x61E6727E)
 I (D:\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
@@ -467,7 +562,11 @@ I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
+<<<<<<< HEAD
 I (..\HARDWARE\APP\task.h)(0x6732C0C8)
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\SYSTEM\include\include.h)(0x671211FF)
 I (D:\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (D:\ARM\ARMCC\include\string.h)(0x5EC77604)
@@ -478,7 +577,11 @@ I (..\HARDWARE\timer\timer.h)(0x670A53A8)
 I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
 I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
 I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
@@ -517,13 +620,21 @@ I (..\HARDWARE\timer\timer.h)(0x670A53A8)
 I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
 I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
 I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+<<<<<<< HEAD
 I (..\HARDWARE\KEY\key.h)(0x6718AABD)
+=======
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\HARDWARE\CAN\can.h)(0x66AB0432)
 I (..\HARDWARE\DMA\dma.h)(0x61E67280)
 I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
 I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
 I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
 I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 F (..\SYSTEM\delay\delay.c)(0x6565A030)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
 I (..\SYSTEM\delay\delay.h)(0x6565A030)
 I (..\SYSTEM\sys\sys.h)(0x61E67280)
@@ -565,7 +676,11 @@ I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61E67280)
 I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x61E6727E)
+<<<<<<< HEAD
 F (..\SYSTEM\usart\usart.c)(0x6732F51F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+=======
+F (..\SYSTEM\usart\usart.c)(0x674D30AD)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 I (..\SYSTEM\sys\sys.h)(0x61E67280)
 I (..\USER\stm32f10x.h)(0x61E67280)
 I (..\CORE\core_cm3.h)(0x61E6727E)
@@ -605,6 +720,24 @@ I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
 I (..\HARDWARE\APP\AD.h)(0x6712162E)
 I (..\USER\stm32f10x_it.h)(0x61E67280)
 I (..\HARDWARE\APP\app.h)(0x6710DFA9)
+<<<<<<< HEAD
+=======
+I (..\HARDWARE\EXTI\exti.h)(0x66827D23)
+I (..\HARDWARE\APP\task.h)(0x6731B096)
+I (..\SYSTEM\include\include.h)(0x671211FF)
+I (..\SYSTEM\delay\delay.h)(0x6565A030)
+I (..\HARDWARE\timer\timer.h)(0x670A53A8)
+I (..\HARDWARE\OLED\oled.h)(0x67122BFC)
+I (D:\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
+I (..\HARDWARE\KEY\key.h)(0x672C8249)
+I (..\HARDWARE\CAN\can.h)(0x66AB0432)
+I (..\HARDWARE\DMA\dma.h)(0x61E67280)
+I (..\HARDWARE\IAP_APP\iap_APP.h)(0x67089B85)
+I (..\HARDWARE\CAN\SEGGER_RTT.h)(0x5DBF974C)
+I (..\HARDWARE\CAN\SEGGER_RTT_Conf.h)(0x5A74A21A)
+I (..\HARDWARE\APP\BSP_eeprom.h)(0x662724DB)
+I (..\HARDWARE\APP\AD.h)(0x6712162E)
+>>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 F (..\SYSTEM\include\include.h)(0x671211FF)()
 F (..\CORE\core_cm3.c)(0x61E6727E)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\FWLIB\STM32F10x_FWLib\inc -I ..\HARDWARE\KEY -I ..\HARDWARE\SPI -I ..\HARDWARE\FLASH -I ..\MALLOC -I ..\MALLOC -I ..\USMART -I ..\EMWIN\STemWin\Config -I ..\EMWIN\STemWin\inc -I ..\EMWIN\Demo -I ..\EMWIN\Demo -I ..\SYSTEM\usart -I ..\SYSTEM\include -I ..\HARDWARE\DMA -I ..\HARDWARE\timer -I ..\HARDWARE\OLED -I ..\HARDWARE\CAN -I ..\HARDWARE\IAP_APP -I ..\HARDWARE\motor -I ..\HARDWARE\EXTI -I ..\HARDWARE\APP-I.\RTE\_Target_1-ID:\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\core_cm3.o --omf_browse ..\obj\core_cm3.crf --depend ..\obj\core_cm3.d)
 I (D:\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
