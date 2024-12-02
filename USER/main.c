@@ -51,18 +51,9 @@ int main(void)
 		/*清除WU状态位*/
 		PWR_ClearFlag (PWR_FLAG_WU);
 		
-	
-	//PBout(14) = 0;
 
-//		if(RC.num >= 20000){
-////			//__set_FAULTMASK(1); //关闭所有中断 
-////			NVIC_SystemReset();
-//			//printf("\r\n");
-//			usart2_send_data("AT+RST\r\n");
-//			
-//			RC.num = 0;
-//		}
 	}		
 }
+	}
 
 

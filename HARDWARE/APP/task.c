@@ -40,20 +40,6 @@ void remote_control_command(void){
 			
 		}
 		
-		//心跳计数
-		RC.time ++;
-		
-		//计时4秒发送心跳
-		if(RC.time >= 4000){
-			Uart2_Tx[0] = 0xAA;
-			Uart2_Tx[1] = 0x55;
-			Uart2_Tx[2] = 0x01;
-			Uart2_Tx[3] = 0x55;
-			Uart2_Tx[4] = 0xAA;
-			u2_SendArray(Uart2_Tx,5);
-			RC.time = 0;
-			memset(Uart2_Tx, 0, sizeof(Uart2_Tx));
-		}
 		
 		//按键检测
 		key_flag = KEY_Scan(0);

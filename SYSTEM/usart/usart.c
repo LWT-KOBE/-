@@ -476,8 +476,6 @@ void DMA1_Channel7_IRQHandler(void)
 }
 
 
-<<<<<<< HEAD
-=======
 //串口2接收处理函数
 void Serial2Data(uint8_t ucData){
 	static unsigned char ucRxBuffer[250];
@@ -498,7 +496,6 @@ void Serial2Data(uint8_t ucData){
 	
 }
 
->>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 
 void USART2_IRQHandler(void)
 {
@@ -530,7 +527,7 @@ void USART2_IRQHandler(void)
 	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET) //Check if data is received //判断是否接收到数据
 	{
 		Res = USART_ReceiveData(USART2);	//读取接收到的数据
-		Serial2Data(Res);
+		//Serial2Data(Res);
 		USART_SendData(USART1,Res);
 		//USART_SendData(USART2,Res);
 		if((USART_RX_STA&0x8000)==0)//接收未完成
