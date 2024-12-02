@@ -25,7 +25,7 @@ int main(void)
 	uart_init(115200);				//初始化串口1
 	uart2_init(115200);				//初始化串口2
 	time2_init(99, 719); //1MS  
-	DMA_USART2_Configuration();
+	//DMA_USART2_Configuration();
 	//AD_Init();
 	Adc_Init();
 	//DMA_USART1_Configuration();
@@ -42,11 +42,15 @@ int main(void)
 	while(1)  
 	{		
 		//数码管显示
-		Display();
+//		if(RC.num == 50){
+//			Display();
+//			RC.num = 0;
+//		}
+		
 
 //	
 //	/* 如果120秒后没有按键按下则进入待机模式 */
-	if(RC.control_idle_time >= 120000){
+	if(RC.control_idle_time >= 90000){
 		RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR , ENABLE);
 		/*清除WU状态位*/
 		PWR_ClearFlag (PWR_FLAG_WU);

@@ -24,8 +24,9 @@
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
-..\obj\main.o: ..\HARDWARE\timer\timer.h
+..\obj\main.o: ..\HARDWARE\APP\task.h
 ..\obj\main.o: ..\SYSTEM\include\include.h
+..\obj\main.o: ..\HARDWARE\timer\timer.h
 ..\obj\main.o: ..\HARDWARE\EXTI\exti.h
 ..\obj\main.o: ..\HARDWARE\OLED\oled.h
 ..\obj\main.o: D:\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -36,7 +37,6 @@
 ..\obj\main.o: ..\HARDWARE\CAN\SEGGER_RTT.h
 ..\obj\main.o: ..\HARDWARE\CAN\SEGGER_RTT_Conf.h
 ..\obj\main.o: ..\HARDWARE\APP\BSP_eeprom.h
-..\obj\main.o: ..\HARDWARE\APP\task.h
 ..\obj\main.o: ..\HARDWARE\APP\AD.h
 ..\obj\main.o: ..\HARDWARE\motor\motor.h
 ..\obj\main.o: ..\HARDWARE\APP\app.h

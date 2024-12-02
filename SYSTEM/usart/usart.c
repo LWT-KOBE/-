@@ -23,6 +23,16 @@ u8 USART_RX_BUF[USART_REC_LEN];     //接收缓冲,最大USART_REC_LEN个字节.
 u16 USART_RX_STA=0;       //接收状态标记	  
   
 	
+//定义存储接收字符串的数组
+char g_usart1_recv_buf[RECV_BUF_SIZE] = {0};
+
+
+//定义存储发送字符串的数组
+char g_usart1_send_buf[SEND_BUF_SIZE] = {0};
+
+//定义接收字符的计数
+int g_usart1_recv_cnt = 0;	
+
 //////////////////////////////////////////////////////////////////
 //加入以下代码,支持printf函数,而不需要选择use MicroLIB	  
 #if 1
@@ -92,10 +102,10 @@ void uart_init(u32 bound) {
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1|RCC_APB2Periph_GPIOA, ENABLE);	//使能USART1，GPIOA时钟
 
     //USART1_TX   GPIOA.9
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9; //PA.9
-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//复用推挽输出
-    GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA.9
+//    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9; //PA.9
+//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//复用推挽输出
+//    GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA.9
 
     //USART1_RX	  GPIOA.10初始化
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;//PA10
@@ -202,34 +212,77 @@ void usart1_send_data(char *buf)
 }
 
 
+//串口1接收发送处理函数
+void Serial1Data(uint8_t ucData){
+	
+	
+		static unsigned char ucRxBuffer[250];
+		static unsigned char ucRxCnt = 0;	
+		ucRxBuffer[ucRxCnt++]=ucData;	//将收到的数据存入缓冲区中
+		
+		//保存接收的字符到字符串数组的对应的位置
+		g_usart1_recv_buf[g_usart1_recv_cnt] =ucData;
+		//接收字符的计数
+		g_usart1_recv_cnt++;
+		
+		
+			
+	
+		//当接收到符合格式的字符串，或者接收达到数组上限，就进行字符串数据的处理
+		if(g_usart1_recv_cnt > RECV_BUF_SIZE-1 || g_usart1_recv_buf[g_usart1_recv_cnt-1] == '\n')
+		{
+			//strncmp函数是用来比较两个字符串前N个字节是否相同，strcmp函数是比较两个字符串是否相同
+			/*
+				参数1、2：要比较的两个字符串地址
+				参数3：要比较的两个字符串的前n个字节
+				返回0，则表示字符串前N个字节相同
+			*/
+			/*
+						printf,scanf函数是标准输出输入函数，他会自动从标准设备中进行数据的输出与输入（stdout,stdin）
+						sprintf,sscanf函数他们的输出输入已经实现重定向，他会自动把数据从所指定的内存空间中进行输出与输入（buf）
+						参数1：要输出/输入的数据内存空间
+						参数2：要输出/输入的字符串格式，格式化符号%d：整型，%c：字符，%s：字符串
+						参数3：要格式化输出/输入的变量
+				*/
+			
+			
+			
+			
+			if(strncmp(g_usart1_recv_buf, "REST=\n ", 5) == 0)//重置WiFi
+			{
+				//sscanf(g_usart1_recv_buf, "F=%d\n", &balanceData.flag);//速度修改
+				//usart2_send_data("AT+RESTORE\r\n");
+				RC.flag = 1;
+			}
+			
+			if(strncmp(g_usart1_recv_buf, "RUN=\n ", 4) == 0)//重置WiFi
+			{
+				//sscanf(g_usart1_recv_buf, "F=%d\n", &balanceData.flag);//速度修改
+				//usart2_send_data("AT+RESTORE\r\n");
+				RC.flag = 2;
+			}
+			
+			//清空字符串数组
+			memset(g_usart1_recv_buf, 0, sizeof(g_usart1_recv_buf));
+			
+			//计数值清空
+			g_usart1_recv_cnt = 0;
+		}
+		
+		
+	
+	
+}
+
+
 void USART1_IRQHandler(void) 
 {
-//    if(USART_GetITStatus(USART1, USART_IT_IDLE) != RESET) 
-//    { 
-//			DMA_Cmd(DMA1_Channel5,DISABLE);
-//			Uart1_Rx_length = USART1->SR; 
-//			Uart1_Rx_length = USART1->DR; 
-//			Uart1_Rx_length = UART1_RX_LEN - DMA_GetCurrDataCounter(DMA1_Channel5); 
-//			
-//			if(Uart1_Rx_length<UART1_RX_LEN)
-//			{
-//				//NFCNUM = Uart2_Rx[0]<<24 | Uart2_Rx[1]<<16 | Uart2_Rx[2]<<8 | Uart2_Rx[3];
-
-//			}      
-//			DMA1_Channel5->CNDTR = UART1_RX_LEN;
-//			DMA_Cmd(DMA1_Channel5, ENABLE);
-//    }
-//		
-//    if(USART_GetITStatus(USART1, USART_IT_TC)!= RESET)//当发送完成时进入串口1中断
-//    {    
-//			NVIC_ClearPendingIRQ(USART1_IRQn);//清除中断标志
-//			USART_ClearITPendingBit(USART1,USART_IT_TC);//清除串口2发送完成标志标志
-//    }		
 	u8 Res;
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
     {
         Res =USART_ReceiveData(USART1);	//读取接收到的数据
 		//USART_SendData(USART1,Res);
+//		Serial1Data(Res);
 		USART_SendData(USART2,Res);
         if((USART_RX_STA&0x8000)==0)//接收未完成
         {
@@ -319,7 +372,9 @@ void uart2_init(u32 bound)
    //串口中断配置
    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
    NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;//允许USART2中断
-   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;//中断等级
+   //NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;//中断等级
+   NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=3 ;//抢占优先级3
+   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 3;		//子优先级3
    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
    NVIC_Init(&NVIC_InitStructure);                
 }
@@ -419,10 +474,11 @@ void DMA1_Channel7_IRQHandler(void)
     }
 }
 
-u8 Res;
+
 
 void USART2_IRQHandler(void)
 {
+	u8 Res;
 //    if(USART_GetITStatus(USART2, USART_IT_IDLE) != RESET) 
 //    { 
 //			DMA_Cmd(DMA1_Channel6,DISABLE);
@@ -451,6 +507,7 @@ void USART2_IRQHandler(void)
 	{
 		Res = USART_ReceiveData(USART2);	//读取接收到的数据
 		USART_SendData(USART1,Res);
+		//USART_SendData(USART2,Res);
 		if((USART_RX_STA&0x8000)==0)//接收未完成
 			{
 			if(USART_RX_STA&0x4000)//接收到了0x0d

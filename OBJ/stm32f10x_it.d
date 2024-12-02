@@ -25,8 +25,9 @@
 ..\obj\stm32f10x_it.o: ..\SYSTEM\delay\delay.h
 ..\obj\stm32f10x_it.o: ..\SYSTEM\sys\sys.h
 ..\obj\stm32f10x_it.o: ..\SYSTEM\usart\usart.h
-..\obj\stm32f10x_it.o: ..\HARDWARE\timer\timer.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\APP\task.h
 ..\obj\stm32f10x_it.o: ..\SYSTEM\include\include.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\timer\timer.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\EXTI\exti.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\OLED\oled.h
 ..\obj\stm32f10x_it.o: D:\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -37,5 +38,4 @@
 ..\obj\stm32f10x_it.o: ..\HARDWARE\CAN\SEGGER_RTT.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\CAN\SEGGER_RTT_Conf.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\APP\BSP_eeprom.h
-..\obj\stm32f10x_it.o: ..\HARDWARE\APP\task.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\APP\AD.h

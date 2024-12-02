@@ -25,6 +25,7 @@
 ..\obj\task.o: ..\SYSTEM\delay\delay.h
 ..\obj\task.o: ..\SYSTEM\sys\sys.h
 ..\obj\task.o: ..\SYSTEM\usart\usart.h
+..\obj\task.o: ..\HARDWARE\APP\task.h
 ..\obj\task.o: ..\HARDWARE\timer\timer.h
 ..\obj\task.o: ..\SYSTEM\include\include.h
 ..\obj\task.o: ..\HARDWARE\EXTI\exti.h
@@ -37,5 +38,4 @@
 ..\obj\task.o: ..\HARDWARE\CAN\SEGGER_RTT.h
 ..\obj\task.o: ..\HARDWARE\CAN\SEGGER_RTT_Conf.h
 ..\obj\task.o: ..\HARDWARE\APP\BSP_eeprom.h
-..\obj\task.o: ..\HARDWARE\APP\task.h
 ..\obj\task.o: ..\HARDWARE\APP\AD.h
