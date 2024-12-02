@@ -16,10 +16,6 @@ typedef struct
 	float battery_voltage;				//电池电压
 	float reference_voltage;			//内部基准电压
 	int num;
-<<<<<<< HEAD
-=======
-	u32 time;
->>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 }remote_control;
 
 extern remote_control RC;

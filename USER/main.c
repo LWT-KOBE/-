@@ -21,7 +21,6 @@ int main(void)
 	uart_init(115200);				//初始化串口1
 	uart2_init(115200);				//初始化串口2
 	time2_init(99, 719); //1MS  
-<<<<<<< HEAD
 	//DMA_USART2_Configuration();
 	//AD_Init();
 	Adc_Init();
@@ -51,12 +50,6 @@ int main(void)
 		RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR , ENABLE);
 		/*清除WU状态位*/
 		PWR_ClearFlag (PWR_FLAG_WU);
-=======
-	DMA_USART2_Configuration();
-	
-	while(1)  
-	{		
->>>>>>> d21cc8e588ad563df3fa175ce38d0cf27afa87e1
 		
 	
 	//PBout(14) = 0;
