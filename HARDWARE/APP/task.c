@@ -16,33 +16,10 @@ void remote_control_command(void){
 	if(TIM_GetFlagStatus(TIM2,TIM_IT_Update)==SET)//
 	{	
 		//Uart2_Start_DMA_Tx(5);
-		RC.num++;
 		if(RC.low_battery == 0){
 			key_flag = KEY_Scan(0);
 		}
 
-			
-		
-			
-		
-		
-		//检测wifi掉线是否超过12秒
-		if(RC.num >= 12000){
-			//超过12秒拉低模块RST脚
-			PAout(12) = 0;
-			
-			//两秒后拉高模块RST脚完成重启
-			if(RC.num > 14000){
-				RC.num = 0;
-				PAout(12) = 1;
-			}
-			
-			
-		}
-		
-		
-		//按键检测
-		key_flag = KEY_Scan(0);
 		
 		//判断按键发送内容
 		switch (key_flag)
@@ -397,7 +374,7 @@ void remote_control_command(void){
 				//帧尾
 				Uart2_Tx[7] = 0xef;
 				
-				RC.car_status = 3;
+				RC.car_status = 12;
 				u2_SendArray(Uart2_Tx,8);
 				
 			
@@ -416,7 +393,8 @@ void remote_control_command(void){
         		break;
         }
 		
-		
+		LED_Display1 = RC.car_status;
+		LED_Display2 = RC.car_num;
 		
 		//记录按键是否按下，以及未按下时间
 		if(key_flag == 0){
@@ -425,14 +403,6 @@ void remote_control_command(void){
 			RC.control_idle_time = 0;
 		}
 		
-		if(RC.num == 50){
-			LED_Tube_Choose_DisPlay1(gShowNumberData[1], gShowAlphabetData[LED_Display1], gShowNumberData[LED_Display2]);
-			RC.num = 0;
-		}
-		
-		//Display();
-		//LED_Tube_Choose_DisPlay1(gShowNumberData[1], gShowAlphabetData[LED_Display1], gShowNumberData[LED_Display2]);
-		
 	}
 }
 
@@ -440,11 +410,15 @@ void TIM2_IRQHandler(void)
 {
 	{
 		
+		//基准电压计算
+		RC.reference_voltage = (1.2f/adcSampleValue[1]) * 4095;
+		//电池电压计算
+		RC.battery_voltage = (adcSampleValue[0] / 4095.0f) * RC.reference_voltage * 2.0;
 		
-//		if(RC.battery_voltage < 3.5){
-//			LED_Display1 = 12;
-//			LED_Display2 = 15;
-//		}
+		if(RC.battery_voltage < 3.5){
+			LED_Display1 = 12;
+			LED_Display2 = 15;
+		}
 		
 		//低电量显示
 		if(RC.reference_voltage < 3.15f){
@@ -467,24 +441,8 @@ void TIM2_IRQHandler(void)
 			RC.low_battery_num = 0;
 		}
 		
-//		switch (RC.flag)
-//        {
-//        	case 0:
-//				
-//        		break;
-//        	case 1:
-//				usart2_send_data("AT+RESTORE\r\n");
-//        		break;
-//			case 2:
-//				
-//				usart2_send_data("AT+CWJAP=\"XHCTEST\",\"test66668888\",\"s.y\"\r\n");
-//				usart2_send_data("AT+CIPMUX=0\r\n");
-//				usart2_send_data("AT+SAVETRANSLINK=1,\"192.168.0.255\",10000,\"UDP\",10000\r\n");
-//        		break;
-//        	default:
-//        		break;
-//        }
-//		
+
+		
 		//遥控器控制指令
 		remote_control_command();
 		

@@ -460,6 +460,26 @@
           <WinNumber>1</WinNumber>
           <ItemText>RC</ItemText>
         </Ww>
+        <Ww>
+          <count>58</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>remote_control</ItemText>
+        </Ww>
+        <Ww>
+          <count>59</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>key_flag</ItemText>
+        </Ww>
+        <Ww>
+          <count>60</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Uart2_Tx[4]</ItemText>
+        </Ww>
+        <Ww>
+          <count>61</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Uart2_Tx[UART2_TX_LEN]</ItemText>
+        </Ww>
       </WatchWindow1>
       <WatchWindow2>
         <Ww>

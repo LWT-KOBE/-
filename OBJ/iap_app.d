@@ -28,9 +28,8 @@
 ..\obj\iap_app.o: D:\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\iap_app.o: ..\SYSTEM\delay\delay.h
 ..\obj\iap_app.o: ..\SYSTEM\usart\usart.h
-..\obj\iap_app.o: ..\HARDWARE\APP\task.h
-..\obj\iap_app.o: ..\SYSTEM\include\include.h
 ..\obj\iap_app.o: ..\HARDWARE\timer\timer.h
+..\obj\iap_app.o: ..\SYSTEM\include\include.h
 ..\obj\iap_app.o: ..\HARDWARE\EXTI\exti.h
 ..\obj\iap_app.o: ..\HARDWARE\OLED\oled.h
 ..\obj\iap_app.o: D:\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -39,4 +38,5 @@
 ..\obj\iap_app.o: ..\HARDWARE\CAN\SEGGER_RTT.h
 ..\obj\iap_app.o: ..\HARDWARE\CAN\SEGGER_RTT_Conf.h
 ..\obj\iap_app.o: ..\HARDWARE\APP\BSP_eeprom.h
+..\obj\iap_app.o: ..\HARDWARE\APP\task.h
 ..\obj\iap_app.o: ..\HARDWARE\APP\AD.h

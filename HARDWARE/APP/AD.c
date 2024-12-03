@@ -246,4 +246,3 @@ uint16_t KalmanFilter(uint16_t inData)
 	prevData = inData;
 	return inData;                                             //返回滤波值
 }
-

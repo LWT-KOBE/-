@@ -14,3 +14,4 @@ uint16_t MoveAverageFilter(uint16_t AD_value);
 uint16_t KalmanFilter(uint16_t inData);
 
 #endif
+

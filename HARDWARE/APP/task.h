@@ -15,7 +15,6 @@ typedef struct
 	float control_idle_time;			//未按下遥控器的时间
 	float battery_voltage;				//电池电压
 	float reference_voltage;			//内部基准电压
-	int num;
 }remote_control;
 
 extern remote_control RC;

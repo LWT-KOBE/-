@@ -23,10 +23,12 @@
 ..\obj\can.o: ..\SYSTEM\delay\delay.h
 ..\obj\can.o: ..\SYSTEM\usart\usart.h
 ..\obj\can.o: D:\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\can.o: ..\HARDWARE\APP\task.h
+..\obj\can.o: ..\HARDWARE\IAP_APP\iap_APP.h
+..\obj\can.o: ..\HARDWARE\APP\app.h
+..\obj\can.o: ..\HARDWARE\motor\motor.h
+..\obj\can.o: ..\HARDWARE\KEY\key.h
 ..\obj\can.o: ..\SYSTEM\include\include.h
 ..\obj\can.o: D:\ARM\ARMCC\Bin\..\include\string.h
-..\obj\can.o: ..\SYSTEM\usart\usart.h
 ..\obj\can.o: ..\HARDWARE\timer\timer.h
 ..\obj\can.o: ..\SYSTEM\include\include.h
 ..\obj\can.o: ..\HARDWARE\EXTI\exti.h
@@ -34,11 +36,8 @@
 ..\obj\can.o: D:\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\can.o: ..\HARDWARE\KEY\key.h
 ..\obj\can.o: ..\HARDWARE\DMA\dma.h
-..\obj\can.o: ..\HARDWARE\IAP_APP\iap_APP.h
 ..\obj\can.o: ..\HARDWARE\CAN\SEGGER_RTT.h
 ..\obj\can.o: ..\HARDWARE\CAN\SEGGER_RTT_Conf.h
 ..\obj\can.o: ..\HARDWARE\APP\BSP_eeprom.h
 ..\obj\can.o: ..\HARDWARE\APP\task.h
 ..\obj\can.o: ..\HARDWARE\APP\AD.h
-..\obj\can.o: ..\HARDWARE\APP\app.h
-..\obj\can.o: ..\HARDWARE\motor\motor.h

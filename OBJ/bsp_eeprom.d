@@ -25,9 +25,8 @@
 ..\obj\bsp_eeprom.o: ..\SYSTEM\delay\delay.h
 ..\obj\bsp_eeprom.o: ..\SYSTEM\sys\sys.h
 ..\obj\bsp_eeprom.o: ..\SYSTEM\usart\usart.h
-..\obj\bsp_eeprom.o: ..\HARDWARE\APP\task.h
-..\obj\bsp_eeprom.o: ..\SYSTEM\include\include.h
 ..\obj\bsp_eeprom.o: ..\HARDWARE\timer\timer.h
+..\obj\bsp_eeprom.o: ..\SYSTEM\include\include.h
 ..\obj\bsp_eeprom.o: ..\HARDWARE\EXTI\exti.h
 ..\obj\bsp_eeprom.o: ..\HARDWARE\OLED\oled.h
 ..\obj\bsp_eeprom.o: D:\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,4 +37,5 @@
 ..\obj\bsp_eeprom.o: ..\HARDWARE\CAN\SEGGER_RTT.h
 ..\obj\bsp_eeprom.o: ..\HARDWARE\CAN\SEGGER_RTT_Conf.h
 ..\obj\bsp_eeprom.o: ..\HARDWARE\APP\BSP_eeprom.h
+..\obj\bsp_eeprom.o: ..\HARDWARE\APP\task.h
 ..\obj\bsp_eeprom.o: ..\HARDWARE\APP\AD.h
